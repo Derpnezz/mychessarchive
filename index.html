@@ -14,28 +14,10 @@
   <div class="container">
     <!-- greeting content -->
     <h1>EVERY. SINGLE. CHESS GAME.</h1>
-    <p>*all of Gabriel Yee's recorded games</p>
-    <button class="button" onclick="fadeOutContainer()">CONTINUE</button>
-    <script>
-      function fadeOutContainer() {
-        const container = document.querySelector('.container');
-        container.style.transition = 'opacity 1s ease-out';
-        container.style.opacity = '0';
-        setTimeout(() => {
-          container.style.display = 'none';
-        }, 1000);
-      }
-    </script>
+    <p>*most of Gabriel Yee's recorded games</p>
+    <button class="button" onclick='goToNAME("tournament")'>TOURNAMENT GAMES</button>
   </div>
-  <script src="script.js"></script>
-
-  <div class="main">
-    <h2>My Chess Games</h2>
-    <p>Browse through all my recorded games below.</p>
-    <!-- Add your game entries here -->
-  </div>
-
-  
+  <script src="script.js"></script>  
 </body>
 
 </html>
