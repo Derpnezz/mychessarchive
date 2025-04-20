@@ -4,13 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>&lrm;</title>
+  <link rel="icon" type="image/x-icon" href="/images/archive.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Rustica:wght@700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
+  <div class="container">
+    <!-- greeting content -->
+    <h1>EVERY. SINGLE. CHESS GAME.</h1>
+    <p>*all of Gabriel Yee's recorded games</p>
+    <button class="button" onclick="fadeOutContainer()">CONTINUE</button>
+    <script>
+      function fadeOutContainer() {
+        const container = document.querySelector('.container');
+        container.style.transition = 'opacity 1s ease-out';
+        container.style.opacity = '0';
+        setTimeout(() => {
+          container.style.display = 'none';
+        }, 1000);
+      }
+    </script>
+  </div>
   <script src="script.js"></script>
+
+  <div className="main">
+    <!-- ALL GAMES LISTED BELOW WITH INFO -->
+    <!-- TEMPLATE
+    
+    -->
+    real content here
+  </div>
+
+  
 </body>
 
 </html>
