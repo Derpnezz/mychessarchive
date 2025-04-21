@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 1s ease-in;
 }
 
+.main.invisible {
+  opacity: 0;
+}
+
 .card {
   offset-position: revert;
   offset-position: bottom 10px right 20px;
