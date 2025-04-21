@@ -14,23 +14,23 @@
   <script src="script.js"></script>
 
   <div class="main">
-    <button onclick='goToNAME("index")'>Go Back to Homepage</button>
-    <h1>15|10 Chess.com Games</h1>
-    <br>
+    <div>
+      <button onclick='goToNAME("index")'>Go Back to Homepage</button>
+      <h1>Rapid Chess.com Games</h1>
+      <h2>Total: <span id="total-games"></span> Games</h2>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const cardCount = document.querySelectorAll(".card").length;
+          document.getElementById("total-games").innerText = cardCount;
+        });
+      </script>
+      <br>
+    </div>
     <!-- TEMPLATE 
     <div class="card">
       
     </div>
     -->
-
-    <div class="card">
-    </div>
-
-    <div class="card">
-    </div>
-
-    <div class="card">
-    </div>
 
     <div class="card">
       <iframe id="13133134" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=13133134"></iframe><script nonce="chesscom-diagram">window.addEventListener("message",e=>{e['data']&&"13133134"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)});</script>
