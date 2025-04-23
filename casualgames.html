@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>&lrm;</title>
+  <link rel="icon" type="image/x-icon" href="/images/icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Rustica:wght@700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <div class="main">
+    <div>
+      <button onclick='goToNAME("index")'>Go Back to Homepage</button>
+      <br>
+      <h1>Casual Games</h1>
+      <h2>Total: <span id="total-games"></span> Games</h2>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const cardCount = document.querySelectorAll(".card").length;
+          document.getElementById("total-games").innerText = cardCount;
+        });
+      </script>
+    </div>
+    <br>
+    <!-- TEMPLATE 
+    <div class="card" gameID="embedID"></div>
+    -->
+
+
+    <div class="card" gameID="[gid=13145004]"></div>
+
+  </div>
+
+
+</body>
+
+</html>
